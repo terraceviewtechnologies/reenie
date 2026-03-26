@@ -1,0 +1,532 @@
+@font-face {
+  font-display: swap;
+  font-family: "Cooper";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/cooper-black-webfont.woff2") format("woff2");
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8dc71;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #6BC2C1;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+}
+.nav .icon {
+  display: none;
+}
+.nav a {
+  color: black;
+  font-family: "Cooper", sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin-top: auto;
+  height: 100%;
+}
+.nav a:hover {
+  background-color: #f296bb;
+}
+
+.text-image {
+  position: relative;
+  color: black;
+  text-align: center;
+  display: flex;
+  margin-top: 3rem;
+}
+.text-image .text {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.text-image .image {
+  margin: auto;
+}
+.text-image .image img {
+  width: 50vw;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.sew-header-mobile {
+  display: none;
+}
+
+.image-text {
+  display: flex;
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+}
+.image-text .text {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.image-text .image {
+  margin: auto;
+}
+.image-text .image img {
+  width: 30vw;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-background {
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px black solid;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #f8dc71;
+  width: 30%;
+}
+.cards .card-img img {
+  width: 100%;
+  height: 50vh;
+}
+.cards .card-text {
+  text-align: center;
+}
+
+.footer {
+  overflow: hidden;
+  background-color: #6BC2C1;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.footer .footer-col a {
+  color: black;
+  font-family: "Cooper", sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  align-self: center;
+}
+
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cs-contact-490 {
+    padding: var(--sectionPadding);
+  }
+  #cs-contact-490 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  #cs-contact-490 .cs-content {
+    max-width: 32.625rem;
+    text-align: left;
+  }
+  #cs-contact-490 .cs-text {
+    /* 16px - 48px */
+    margin: 0 0 clamp(1rem, 4.4vw, 3rem) 0;
+  }
+  #cs-contact-490 .cs-header {
+    /* 13px - 16px */
+    font-size: clamp(0.8125rem, 1.5vw, 1rem);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0 0 1rem 0;
+    color: #b4b2c7;
+    display: block;
+  }
+  #cs-contact-490 .cs-link {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    text-decoration: none;
+    line-height: 1.5em;
+    font-weight: 700;
+    /* 16px - 32px */
+    margin: 0 0 clamp(1rem, 2.5vw, 2rem);
+    color: var(--headerColor);
+    display: block;
+  }
+  #cs-contact-490 .cs-link:hover {
+    text-decoration: underline;
+  }
+  #cs-contact-490 .cs-link:last-of-type {
+    margin-bottom: 0;
+  }
+  #cs-contact-490 .cs-social {
+    /* 32px - 80px */
+    margin-top: clamp(2rem, 6vw, 5rem);
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 0.75rem;
+  }
+  #cs-contact-490 .cs-social-link {
+    /* 32px - 52px */
+    width: clamp(2rem, 4vw, 3.25rem);
+    height: clamp(2rem, 4vw, 3.25rem);
+    background-color: #6BC2C1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  #cs-contact-490 .cs-social-link:hover {
+    background-color: #f296bb;
+    transform: translateY(-0.1875rem);
+  }
+  #cs-contact-490 .cs-social-img {
+    /* 14px - 24px */
+    height: clamp(0.875rem, 2vw, 1.5rem);
+    width: auto;
+    display: block;
+  }
+  #cs-contact-490 #cs-form-490 {
+    width: 100%;
+    max-width: 40.625rem;
+    /* 32px - 40px */
+    margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
+    /* 20px - 40px */
+    padding: clamp(1.25rem, 4.5vw, 2.5rem);
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    border: 1px solid #dad9e3;
+    border-radius: 1rem;
+  }
+  #cs-contact-490 .cs-label {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.3vw, 1rem);
+    line-height: 1.5em;
+    font-weight: 700;
+    /* 16px - 20px */
+    margin-bottom: clamp(1rem, 1em, 1.25rem);
+    color: var(--headerColor);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #cs-contact-490 .cs-label-message {
+    /* 32px - 40px */
+    margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
+  }
+  #cs-contact-490 .cs-input,
+  #cs-contact-490 textarea {
+    font-size: 1rem;
+    width: 100%;
+    height: 4rem;
+    margin-top: 0.25rem;
+    padding-left: 1.25rem;
+    /* set transparent border so on hover border doesn't make it glitch */
+    border: 1px solid transparent;
+    border-bottom: 1px solid #b4b2c7;
+    /* prevents border & padding from affecting height */
+    box-sizing: border-box;
+    transition: border 0.3s;
+  }
+  #cs-contact-490 .cs-input:hover,
+  #cs-contact-490 textarea:hover {
+    border: 1px solid var(--primary);
+  }
+  #cs-contact-490 .cs-input::placeholder,
+  #cs-contact-490 textarea::placeholder {
+    color: #7d799c;
+  }
+  #cs-contact-490 textarea {
+    font-family: inherit;
+    margin: 0;
+    padding-top: 1.25rem;
+    min-height: 7.5rem;
+  }
+  #cs-contact-490 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    color: #fff;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #cs-contact-490 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.5rem;
+    transition: width 0.3s;
+  }
+  #cs-contact-490 .cs-button-solid:hover {
+    cursor: pointer;
+  }
+  #cs-contact-490 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 700px */
+@media only screen and (min-width: 43rem) {
+  #cs-contact-490 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #cs-contact-490 .cs-content {
+    width: 40%;
+    /* pushes it to the right */
+    order: 2;
+    flex: none;
+  }
+  #cs-contact-490 #cs-form-490 {
+    margin: 0;
+  }
+}
+.card-button {
+  width: 10rem;
+  height: 4rem;
+  color: #000000;
+  border-radius: 1rem;
+  padding: 10px 25px;
+  font-family: "Cooper", sans-serif;
+  font-size: 1.25rem;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  margin: 1rem;
+}
+
+.btn-4 {
+  background-color: #6BC2C1;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-4:hover {
+  background-color: #f296bb;
+}
+
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.9), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.9), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-4:before {
+  height: 0%;
+  width: 0.1px;
+}
+
+.btn-4:after {
+  width: 0%;
+  height: 0.1px;
+}
+
+.btn-4:hover:before {
+  height: 100%;
+}
+
+.btn-4:hover:after {
+  width: 100%;
+}
+
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.9), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.9), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-4 span:before {
+  width: 0.1px;
+  height: 0%;
+}
+
+.btn-4 span:after {
+  width: 0%;
+  height: 0.1px;
+}
+
+.btn-4 span:hover:before {
+  height: 100%;
+}
+
+.btn-4 span:hover:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .nav a:not(:first-child) {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+  .hero-background {
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+  }
+  .sew-header-desktop {
+    display: none;
+  }
+  .sew-header-mobile {
+    display: block;
+    text-align: center;
+  }
+  .text-image {
+    position: relative;
+    color: black;
+    text-align: center;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .text-image .text {
+    width: 95vw;
+    text-align: center;
+    margin: auto;
+  }
+  .text-image .image {
+    margin: auto;
+  }
+  .text-image .image img {
+    width: 95vw;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .image-text {
+    display: block;
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .image-text .text {
+    width: 95vw;
+    margin: auto;
+  }
+  .image-text .image {
+    margin: auto;
+  }
+  .image-text .image img {
+    width: 95vw;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .cards {
+    display: block;
+  }
+  .cards .card {
+    width: 95vw;
+    margin: auto;
+    margin-top: 1rem;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .nav.responsive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
