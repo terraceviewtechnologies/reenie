@@ -194,6 +194,7 @@ width: 30%;
     display: flex;
     position: relative;
     background-color: $secondary-color;
+    padding-top: 1rem;
 
     .footer-left{
         width:calc(100vw / 3);
@@ -261,10 +262,16 @@ width: 30%;
 
         .footer-left{
             width:95vw;
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+            
 
             img{
                 width:80%;
-                margin: auto;
+                display: flex;
+                justify-self: center;
                 }
             }
         }
@@ -289,6 +296,7 @@ width: 30%;
             justify-content: center;
             align-items: flex-start;
             gap: calc(48 / 16 * 1rem);
+            margin-bottom: 2rem;
         }
 
         .cs-content {
