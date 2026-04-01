@@ -6,10 +6,26 @@ $secondary-text: black;
 
 @font-face {
     font-display: swap;
-  font-family: 'Cooper';
+  font-family: 'cass';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/cooper-black-webfont.woff2') format('woff2');
+  src: url('./fonts/J-Audio-Cassette.otf') format('opentype');
+}
+
+h1, h2, h3, p, li, a, label{
+    font-family: 'cass', sans-serif;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+@font-face {
+    font-display: swap;
+  font-family: 'heystone';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/heystone-typeface-oke.otf') format('opentype');
 }
 
 body{
@@ -31,11 +47,11 @@ body{
 
     a {
         color:$secondary-text;
-        font-family: "Cooper", sans-serif;
+        font-family: "heystone", sans-serif;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 1.25rem;
+        font-size: 2rem;
         margin-top:auto;
         height:100%;
 
@@ -180,7 +196,6 @@ width: 30%;
     background-color: $secondary-color;
 
     .footer-left{
-        display: flex;
         width:calc(100vw / 3);
         justify-content: flex-start;
         img{
@@ -192,6 +207,16 @@ width: 30%;
         display: flex;
         justify-content: center;
         width:calc(100vw / 3);
+
+        a {
+        color:$secondary-text;
+        font-family: "heystone", sans-serif;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        align-self: center;
+    }
     }
 
     .footer-right{
@@ -206,11 +231,11 @@ width: 30%;
         flex-direction: column;
     a {
         color:$secondary-text;
-        font-family: "Cooper", sans-serif;
+        font-family: "heystone", sans-serif;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         align-self: center;
     }
 
@@ -277,10 +302,10 @@ width: 30%;
             font-size: clamp(0.8125rem, 1.5vw, 1rem);
             line-height: 1.2em;
             text-transform: uppercase;
-            font-weight: 700;
             letter-spacing: 0.1em;
             margin: 0 0 calc(16 / 16 * 1rem) 0;
-            color: #b4b2c7;
+            color: black;
+            font-size: 1.25rem;
             display: block;
         }
 
@@ -360,6 +385,7 @@ width: 30%;
             font-weight: 700;
             /* 16px - 20px */
             margin-bottom: clamp(1rem, 1em, 1.25rem);
+            font-size: 1.2rem;
             color: var(--headerColor);
             display: flex;
             justify-content: center;
@@ -370,6 +396,7 @@ width: 30%;
         .cs-label-message {
             /* 32px - 40px */
             margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
+            font-size: 1.2rem;
         }
 
         .cs-input,
@@ -475,8 +502,8 @@ width: 30%;
   color: #000000;
   border-radius: 1rem;
   padding: 10px 25px;
-  font-family: "Cooper", sans-serif;
-  font-size: 1.25rem;
+  font-family: "heystone", sans-serif;
+  font-size: 1.5rem;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;

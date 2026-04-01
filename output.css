@@ -1,9 +1,24 @@
 @font-face {
   font-display: swap;
-  font-family: "Cooper";
+  font-family: "cass";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/cooper-black-webfont.woff2") format("woff2");
+  src: url("./fonts/J-Audio-Cassette.otf") format("opentype");
+}
+h1, h2, h3, p, li, a, label {
+  font-family: "cass", sans-serif;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "heystone";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/heystone-typeface-oke.otf") format("opentype");
 }
 body {
   margin: 0;
@@ -23,11 +38,11 @@ body {
 }
 .nav a {
   color: black;
-  font-family: "Cooper", sans-serif;
+  font-family: "heystone", sans-serif;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 2rem;
   margin-top: auto;
   height: 100%;
 }
@@ -145,7 +160,6 @@ body {
   background-color: #6BC2C1;
 }
 .footer .footer-left {
-  display: flex;
   width: 33.3333333333vw;
   justify-content: flex-start;
 }
@@ -156,6 +170,15 @@ body {
   display: flex;
   justify-content: center;
   width: 33.3333333333vw;
+}
+.footer .footer-center a {
+  color: black;
+  font-family: "heystone", sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  align-self: center;
 }
 .footer .footer-right {
   display: flex;
@@ -168,11 +191,11 @@ body {
 }
 .footer .footer-col a {
   color: black;
-  font-family: "Cooper", sans-serif;
+  font-family: "heystone", sans-serif;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   align-self: center;
 }
 .footer .footer-col a:hover {
@@ -223,10 +246,10 @@ body {
     font-size: clamp(0.8125rem, 1.5vw, 1rem);
     line-height: 1.2em;
     text-transform: uppercase;
-    font-weight: 700;
     letter-spacing: 0.1em;
     margin: 0 0 1rem 0;
-    color: #b4b2c7;
+    color: black;
+    font-size: 1.25rem;
     display: block;
   }
   .cs-link {
@@ -295,6 +318,7 @@ body {
     font-weight: 700;
     /* 16px - 20px */
     margin-bottom: clamp(1rem, 1em, 1.25rem);
+    font-size: 1.2rem;
     color: var(--headerColor);
     display: flex;
     justify-content: center;
@@ -304,6 +328,7 @@ body {
   .cs-label-message {
     /* 32px - 40px */
     margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
+    font-size: 1.2rem;
   }
   .cs-input,
   textarea {
@@ -396,8 +421,8 @@ body {
   color: #000000;
   border-radius: 1rem;
   padding: 10px 25px;
-  font-family: "Cooper", sans-serif;
-  font-size: 1.25rem;
+  font-family: "heystone", sans-serif;
+  font-size: 1.5rem;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
